@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Go Top</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #goTop {
+      width: 70px;
+      height: auto;
+      color: white;
+      border: 0;
+      background-color: #2fd566;
+      position: fixed;
+      right: 0;
+      bottom: 10%;
+      display: none;
+      transition: 0.5s;
+    }
+    #goTop.show {
+      display: block;
+      transition: 0.5s;
+    }
+    svg {
+      stroke-width: 1;
+      fill: transparent;
+      stroke: currentColor;
+      transition: stroke .1s;
+    }
+    button {
+      padding: 0 0 10px;
+    }
+    html,body { width: 100%; height: 100%; background-color: #161629; text-align:}
+    h1 { color: #2fd566; font-size: 375px; -webkit-writing-mode: vertical-lr; writing-mode: vertical-lr;  white-space:nowrap; margin: 0 auto;} /*死都不換行*/
+    div { width: 100vh; height: 100vh; font-size: 375px;}  
+  </style>
+
+</head>
+<body>
+  <div>NO SHORTCUTS</div>
+  <div>NO SHORTCUTS</div>
+  <h1>NO SHORTCUTS 徑捷有沒</h1>
+  <!-- Go Top -->
+  <button id="goTop" href="#">
+    <svg viewBox="0 0 32 32"><path d="M10,10 L22,22 M22,10 L10,22"></path></svg>GO TOP
+  </button>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/gotop.js"></script>
+</body>
+</html>
